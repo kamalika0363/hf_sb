@@ -7,7 +7,7 @@ function Navbar() {
       <button className="h-6 w-6" >
         <img src="menu.svg" alt="hamburger" />
         </button>
-      <span>Navbar</span>
+      {/* <span>Navbar</span> */}
       <button className="h-6 w-6" >
         <img src="info.svg" alt="info" />
         </button>

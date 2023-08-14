@@ -7,11 +7,14 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <div className="flex h-screen flex-col items-center justify-between sm:p-8 p-2 m-2">
+      <div className="flex  flex-col items-center justify-between sm:p-8 p-2 m-2 ">
       <Box />
-      <Footer />
+
 
       </div>
+    
+      <Footer />
+
     </main>
   )
 }
