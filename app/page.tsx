@@ -1,9 +1,17 @@
 import Image from 'next/image'
+import Navbar from '@/components/Navbar'
+import Box from '@/components/Box'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 text-3xl font-serif">
-        Somebody make the UI!!!
+    <main>
+      <Navbar />
+      <div className="flex h-screen flex-col items-center justify-between sm:p-8 p-2 m-2">
+      <Box />
+      <Footer />
+
+      </div>
     </main>
   )
 }
