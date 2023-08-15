@@ -21,13 +21,15 @@ const Box = () => {
   const handleInputChange = (event) => {
     setInputText(event.target.value);
   };
+
   const handleLanguageChange = (event) => {
     setLanguage(event.target.value);
   };
+
   return (
-    <div className="rounded-xl sm:p-5 mt-1 p-5 border-2 border-zinc-900 bg-[#070707] font-semibold flex flex-col justify-between items-center sm:w-full w-full  text-xl sm:text-2xl">
-      <div className="bg-black p-5 sm:mt-0 rounded-xl item-center justify-center w-full h-96 border-2 border-zinc-900">
-        <p className="text-stone-400 mb-2 justify-center font-semibold text-lg sm:text-2xl">
+    <div className="rounded-xl sm:p-5 mt-1 p-5 border-2 border-zinc-900 bg-[#070707] font-semibold text-xl sm:text-2xl w-full">
+      <div className="bg-black p-5 sm:mt-0 rounded-xl h-[300px] overflow-y-auto border-2 border-zinc-900">
+        <p className="text-stone-400 mb-2 font-semibold text-lg sm:text-2xl">
           Translated Data
         </p>
         <p>{translatedText}</p>
@@ -37,7 +39,7 @@ const Box = () => {
         <select
           onChange={handleLanguageChange}
           value={language}
-          className="p-2 border border-zinc-900 bg-black rounded-xl text-stone-400 focus:outline-none focus:border-stone-500 text-sm sm:text-md opacity "
+          className="p-2 border border-zinc-900 bg-black rounded-xl text-stone-400 focus:outline-none focus:border-stone-500 text-sm sm:text-md opacity"
         >
           <option value="en-es">English to Spanish</option>
           <option value="en-de">English to German</option>
@@ -49,12 +51,12 @@ const Box = () => {
           type="text"
           onChange={handleInputChange}
           value={inputText}
-          className="rounded-xl p-2 pl-5 w-full border-2 border-zinc-900 bg-black font-semibold text-sm sm:text-xl  "
+          className="rounded-xl p-2 pl-5 w-full border-2 border-zinc-900 bg-black font-semibold text-sm sm:text-xl"
           placeholder="Add text"
         />
         <button
           onClick={fetchTranslation}
-          className=" rounded-xl p-3 border-2 border-zinc-900 bg-[#272728]"
+          className="rounded-xl p-3 border-2 border-zinc-900 bg-[#272728]"
         >
           <img src="Icon.svg" alt="Add" />
         </button>
@@ -62,4 +64,5 @@ const Box = () => {
     </div>
   );
 };
+
 export default Box;
