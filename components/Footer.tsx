@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-black sm-bg-gradient text-white  flex flex-col items-center mix-blend-screen mt-1">
+    <footer className="bg-black text-white flex flex-col items-center mt-5">
       <a
         href="https://github.com/kamalika0363/hf_sb"
         target="_blank"
