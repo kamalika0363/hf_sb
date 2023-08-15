@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
-import Box from "@/components/Box";
+import Box from "@/app/Box";
 import Footer from "@/components/Footer";
 
 export default function Home() {
