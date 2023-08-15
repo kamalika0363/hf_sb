@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-
 const Box = () => {
   const [translatedText, setTranslatedText] = useState("");
   const [inputText, setInputText] = useState("");
@@ -39,9 +38,9 @@ const Box = () => {
     <div className="rounded-xl sm:p-5 mt-1 p-5 border-2 border-zinc-900 bg-[#070707] font-semibold text-xl sm:text-2xl w-full relative">
       <button
         onClick={handleCopyClick}
-        className="pt-7 pr-7 sm:p-5 absolute top-2 right-2 "
+        className="pt-7 pr-7 sm:p-5 absolute top-2 right-2"
       >
-          <img src="copy.svg" alt="Add" />
+        <img src="copy.svg" alt="Copy" />
       </button>
       <div className="bg-black p-5 sm:mt-0 rounded-xl h-[300px] overflow-y-auto border-2 border-zinc-900">
         <p className="text-stone-400 mb-2 font-semibold text-lg sm:text-2xl">
